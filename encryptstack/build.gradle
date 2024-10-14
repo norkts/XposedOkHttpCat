@@ -16,7 +16,7 @@ stringfog {
 
 
 android {
-    compileSdkVersion 26
+    compileSdk 30
 
 
     defaultConfig {
@@ -61,16 +61,16 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file("E:/AndroidKey/lyhKey.jks")
-            storePassword 'wcexit'
-            keyAlias 'wcexit'
-            keyPassword 'wcexit'
+            storeFile file("../security/scorpion.jks")
+            storePassword 'scorpion123'
+            keyAlias 'scorpion'
+            keyPassword 'scorpion123'
         }
         release {
-            storeFile file("E:/AndroidKey/lyhKey.jks")
-            storePassword 'wcexit'
-            keyAlias 'wcexit'
-            keyPassword 'wcexit'
+            storeFile file("../security/scorpion.jks")
+            storePassword 'scorpion123'
+            keyAlias 'scorpion'
+            keyPassword 'scorpion123'
         }
     }
 
@@ -78,6 +78,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildToolsVersion '30.0.3'
 
 }
 
